@@ -33,8 +33,8 @@ def cracking(username, url, password_file, login_failed_string, cookie_value):
                 # Clean HTML from response
                 cleaned_response = clean_response(response.text)
 
-                print(f"\n🔍 DEBUG: Sent Data → {data}")
-                print(f"\n🔍 DEBUG: Cleaned Server Response → {cleaned_response}\n")
+                print(f"\n DEBUG: Sent Data → {data}")
+                print(f"\n DEBUG: Cleaned Server Response → {cleaned_response}\n")
 
 
 
@@ -50,7 +50,7 @@ def cracking(username, url, password_file, login_failed_string, cookie_value):
                     pass  # Wrong password, continue brute-force
                 else:
                     print(colored("[!!] Unexpected Response! Might need to update failure message.", "yellow"))
-                    print(f"🔍 Server Response: {cleaned_response}")  # Show unexpected response for debugging
+                    print(f" Server Response: {cleaned_response}")  # Show unexpected response for debugging
 
     except FileNotFoundError:
         print(colored("[!!] Password file not found!", "red"))
