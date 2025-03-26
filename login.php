@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST['password'] ?? '';
 
     // Debugging: Print received data
-    echo "🔍 Received Username: $username, Password: $password <br>";
+    echo "Received Username: $username, Password: $password <br>";
 
     if ($username === "admin" && $password === "123455") {
         echo "Login Successful!";
