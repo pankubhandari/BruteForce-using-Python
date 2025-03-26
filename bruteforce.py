@@ -9,7 +9,7 @@ def clean_response(response_text):
 
 url = input('[+] Enter Page URL: ')                                     #(http://localhost:8000/login.php)
 username = input('[+] Enter Username For The Account To Bruteforce: ')
-password_file = input('[+] Enter Password File To Use: ')  # Example: rockyou.txt
+password_file = input('[+] Enter Password File To Use: ') 
 login_failed_string = input('[+] Enter String That Occurs When Login Fails: ')
 cookie_value = input('Enter Cookie Value(Optional): ')
 
